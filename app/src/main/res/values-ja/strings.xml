@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">生体認証サンプル</string>
+    <string name="label_fingerprint">指紋認証</string>
+    <string name="label_face">顔認証</string>
+    <string name="label_iris">虹彩認証</string>
+    <string name="biometric_prompt_title">生体認証サンプル</string>
+    <string name="biometric_prompt_subtitle">指紋認証や顔認証を使ってロックを解除します</string>
+    <string name="biometric_prompt_description">生体認証機能を使ったサンプルアプリです。</string>
+    <string name="biometric_prompt_button_cancel">キャンセル</string>
+    <string name="biometric_authentication_text_format">生体認証機能: %1$s</string>
+    <string name="biometric_authentication_text_available">有効</string>
+    <string name="biometric_authentication_text_disable">無効</string>
+    <string name="has_yes">利用可</string>
+    <string name="has_no">利用不可</string>
+    <string name="has_undetermined">不明</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BiometricPromptExample</string>
+    <string name="label_fingerprint">has fingerprint authentication</string>
+    <string name="label_face">has face authentication</string>
+    <string name="label_iris">has iris authentication</string>
+    <string name="biometric_prompt_title">BiometricPromptExample</string>
+    <string name="biometric_prompt_subtitle">Unlock using your biometric credential</string>
+    <string name="biometric_prompt_description">This is a test using biometric authentication for unlocking.</string>
+    <string name="biometric_prompt_button_cancel">Cancel</string>
+    <string name="biometric_authentication_text_format">Biometric Hardware: %1$s</string>
+    <string name="biometric_authentication_text_available">Available</string>
+    <string name="biometric_authentication_text_disable">Disable</string>
+    <string name="has_yes">Yes</string>
+    <string name="has_no">No</string>
+    <string name="has_undetermined">Undetermined</string>
+</resources>
