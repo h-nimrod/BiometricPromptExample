@@ -1,13 +1,17 @@
 package com.hnimrod.biometricexample
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import androidx.core.view.isVisible
 import com.hnimrod.biometricexample.databinding.ActivityMainBinding
 
@@ -23,6 +27,22 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         setupViews()
         setupBiometricPrompt()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_settings -> {
+                val uri = "https://developer.android.com/training/sign-in/biometric-auth".toUri()
+                startActivity(Intent(Intent.ACTION_VIEW, uri))
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun isBiometricHardWareAvailable(): Boolean {

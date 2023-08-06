@@ -13,4 +13,5 @@
     <string name="has_yes">Yes</string>
     <string name="has_no">No</string>
     <string name="has_undetermined">Undetermined</string>
+    <string name="action_document">Documents</string>
 </resources>
