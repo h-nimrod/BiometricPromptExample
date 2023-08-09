@@ -13,4 +13,5 @@
     <string name="has_yes">利用可</string>
     <string name="has_no">利用不可</string>
     <string name="has_undetermined">不明</string>
+    <string name="action_document">ドキュメント</string>
 </resources>
